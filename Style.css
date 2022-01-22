@@ -1,0 +1,113 @@
+:root {
+
+
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    margin: 4rem 2rem;
+}
+
+body {
+    background-color: var(--very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+p {
+    color: var(--transparent-white);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: var(--very-light-gray);
+    padding: 2rem 0;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    border: 2px solid var(--very-light-gray);
+    background-color: var(--very-light-gray);
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.card {
+    padding: 2.5rem;
+}
+
+.class1 {
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.button1 button {
+    color: var(--bright-orange);
+}
+
+.class2 {
+    background-color: var(--dark-cyan);
+}
+
+.button2 button {
+    color: var(--dark-cyan);
+}
+
+.class3 {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+.button3 button {
+    color: var(--very-dark-cyan);
+}
+
+button:hover {
+    background-color: transparent;
+    color: var(--very-light-gray);
+}
+
+@media (min-width:750px) {
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: auto;
+        max-width: 1000px;
+    }
+
+    .class1 {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .class3 {
+        border-radius: 0 10px 10px 0;
+    }
+
+    p {
+        margin-bottom: 4rem;
+    }
+
+}
